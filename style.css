@@ -54,12 +54,13 @@ body {
 
 .present {
   background-color: green;
-  color: white;
+  color: black;
+  font-weight: bolder;
 }
 
 .future {
   background-color: white;
-  color: white;
+  color: black;
 }
 
 .saveBtn {
