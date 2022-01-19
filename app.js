@@ -9,7 +9,9 @@ var three = $("#3PM")
 var four = $("#4PM")
 var five = $("#5PM")
 var six = $("#6PM")
+var seven =$('#7PM')
 var test = $("#test")
+
 
 // adds current date to the header
 var update = function() {
@@ -85,6 +87,12 @@ $("#6button").click(function(){
     localStorage.setItem("6PM",six.val())
     $("#6button").css("background-color","green");
 })
+$("#7button").click(function(){
+    localStorage.setItem("7PM",seven.val())
+    $("#7button").css("background-color","green");
+})
+
+
 
 // sets the text input to be whatever is saved in the local storage when the page refreshes
 function getSavedValues () {
@@ -121,6 +129,10 @@ function getSavedValues () {
     if (localStorage.getItem("6PM") != six.val()) {
         six.val(localStorage.getItem("6PM"))
     }
+    if (localStorage.getItem("7PM") != seven.val()) {
+        seven.val(localStorage.getItem("7PM"))
+    }
+
 }
 getSavedValues()
 
